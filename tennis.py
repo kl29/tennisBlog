@@ -12,11 +12,11 @@ def home():
     response = make_response(html)
     return response
 
-# @app.route('/poly', methods=['GET'])
-# def home():
-#     html = render_template('poly.html')
-#     response = make_response(html)
-#     return response
+@app.route('/poly', methods=['GET'])
+def home():
+    html = render_template('poly.html')
+    response = make_response(html)
+    return response
 
 # @app.route('/hybrid', methods=['GET'])
 # def home():

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" >
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <title>Kevin Lin Tennis</title>
+
+        <style>
+            body,p,h3 {
+                  font-family: 'Varela Round', sans-serif !important;
+                  }
+
+            body {
+                background-color: lightgreen !important;
+            }
+
+            h1 {
+            color: royalblue !important;
+            text-align: center
+            }
+
+            .padThis {
+            padding-left: 100px;
+            padding-right: 100px;
+            }               
+          </style>
+
+
+    </head>
+    <body>
+
+        {% include 'nav.html' %}
+
+        <div class="padThis">
+
+            <h1>Welcome to Kevin Lin's tennis site!</h1><br>
+            <h1>Favorite Poly strings</h1><br>
+            
+            <h3>Volkl Cyclone (Yellow, Orange, Black) <br><br></h3>
+
+            <p>
+                10-sided "bite/spin" string. It's very crisp and lasts quite a while without notching. I string 55M / 50C.
+            </p>
+
+        </div>
+        
+        <!-- <script src="" async defer></script> -->
+    </body>
+</html>
