@@ -13,7 +13,7 @@ def home():
     return response
 
 @app.route('/poly', methods=['GET'])
-def home():
+def poly():
     html = render_template('poly.html')
     response = make_response(html)
     return response
