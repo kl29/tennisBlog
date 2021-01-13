@@ -24,6 +24,15 @@
             body {
                 background-color: lightgreen !important;
             }
+            h1 {
+            color: maroon !important;
+            text-align: center
+            }
+
+            .padThis {
+            padding-left: 100px;
+            padding-right: 100px;
+            }               
           </style>
 
 
@@ -31,13 +40,13 @@
     <body>
 
         {% include 'nav.html' %}
-
-        <h1>Welcome to Kevin Lin's tennis site!</h1><br>
-        
-        Learn all about my favorite strings, stringing tips, and strategies here. <br>
-        Click here for my developer site: 
-        <a href="https://kl29.github.io/" target="_blank">kl29.github.io</a>
-
+        <div class="padThis">
+            <h1>Welcome to Kevin Lin's tennis site!</h1><br>
+            
+            Learn all about my favorite strings, stringing tips, and strategies here. <br>
+            Click here for my developer site: 
+            <a href="https://kl29.github.io/" target="_blank">kl29.github.io</a>
+        </div>
         
         <script src="" async defer></script>
     </body>
