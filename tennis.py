@@ -1,6 +1,8 @@
 from flask import Flask, request, make_response, redirect, url_for, render_template, session
 
 app = Flask(__name__, template_folder='.')
+app.add_url_rule('/favicon.ico',
+                 redirect_to=url_for('static', filename='favicon.ico'))
 
 @app.route('/', methods=['GET'])
 @app.route('/home', methods=['GET'])
